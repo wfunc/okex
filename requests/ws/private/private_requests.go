@@ -1,6 +1,6 @@
 package private
 
-import "github.com/amir-the-h/okex"
+import "github.com/wfunc/okex"
 
 type (
 	Account struct {

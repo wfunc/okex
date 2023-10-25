@@ -1,6 +1,6 @@
 package market
 
-import "github.com/amir-the-h/okex"
+import "github.com/wfunc/okex"
 
 type (
 	GetTickers struct {

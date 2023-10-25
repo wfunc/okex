@@ -2,10 +2,11 @@ package rest
 
 import (
 	"encoding/json"
-	"github.com/amir-the-h/okex"
-	requests "github.com/amir-the-h/okex/requests/rest/public"
-	responses "github.com/amir-the-h/okex/responses/public_data"
 	"net/http"
+
+	"github.com/wfunc/okex"
+	requests "github.com/wfunc/okex/requests/rest/public"
+	responses "github.com/wfunc/okex/responses/public_data"
 )
 
 // PublicData
