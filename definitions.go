@@ -57,11 +57,7 @@ type (
 	ClientError error
 )
 
-const (
-	NormalServer Destination = iota
-	AwsServer
-	DemoServer
-
+var (
 	RestURL      = BaseURL("https://www.okx.com")
 	PublicWsURL  = BaseURL("wss://ws.okx.com:8443/ws/v5/public")
 	PrivateWsURL = BaseURL("wss://ws.okx.com:8443/ws/v5/private")
@@ -73,6 +69,12 @@ const (
 	DemoRestURL      = BaseURL("https://www.okx.com")
 	DemoPublicWsURL  = BaseURL("wss://wspap.okx.com:8443/ws/v5/public?brokerId=9999")
 	DemoPrivateWsURL = BaseURL("wss://wspap.okx.com:8443/ws/v5/private?brokerId=9999")
+)
+
+const (
+	NormalServer Destination = iota
+	AwsServer
+	DemoServer
 
 	SpotInstrument    = InstrumentType("SPOT")
 	MarginInstrument  = InstrumentType("MARGIN")
